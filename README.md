@@ -4,9 +4,9 @@
 
 ### Heap
 
-1. [x]MaxHeap
-2. [x]MinHeap
-3. [ ]PriorityList
+1. [x] MaxHeap
+2. [x] MinHeap
+3. [ ] PriorityList
 
 ### Tree
 
@@ -14,6 +14,6 @@
 
 ## 缓存策略
 
-1. [ ]LinkedList
-2. [ ]LRU Cache
-3. [ ]LFU Cache
+1. [ ] LinkedList
+2. [ ] LRU Cache
+3. [ ] LFU Cache
