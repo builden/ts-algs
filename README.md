@@ -1,5 +1,11 @@
 # TS-Algorithms
 
+## 安装
+
+```bash
+$ yarn add ts-algs
+```
+
 ## 数据结构
 
 ### Heap
