@@ -1,8 +1,4 @@
 {
-  "cSpell.words": [
-    "algs",
-    "comparision",
-    "heapify",
-    "tsdx"
-  ]
+  "cSpell.words": ["algs", "comparision", "curr", "heapify", "tsdx"],
+  "tslint.exclude": ["**/__test__/*"]
 }

@@ -1,4 +1,4 @@
-import { Comparator, MaxHeap } from '../../../src';
+import { Comparator, MaxHeap } from '../../..';
 
 describe('MaxHeap', () => {
   it('should create an empty max heap', () => {

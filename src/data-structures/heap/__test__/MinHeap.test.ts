@@ -1,4 +1,4 @@
-import { Comparator, MinHeap } from '../../../src';
+import { Comparator, MinHeap } from '../../..';
 
 describe('MinHeap', () => {
   it('should create an empty min heap', () => {
