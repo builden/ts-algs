@@ -27,5 +27,5 @@
     "jsx": "react",
     "esModuleInterop": true
   },
-  "exclude": ["__test__"]
+  "exclude": ["**/__test__/*"]
 }
