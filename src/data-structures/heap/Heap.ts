@@ -57,11 +57,6 @@ export default class Heap {
     return this;
   }
 
-  /**
-   * @param {*} item
-   * @param {Comparator} [comparator]
-   * @return {Heap}
-   */
   remove(item: any, comparator = this.compare) {
     // Find number of items to remove.
     const numberOfItemsToRemove = this.find(item, comparator).length;
@@ -96,6 +91,27 @@ export default class Heap {
     }
 
     return this;
+  }
+
+  modify(item: any, newItem: any, comparator = this.compare) {
+    // Find number of items to modify.
+    const modifyItems = this.find(item, comparator);
+
+    if (modifyItems.length > 0) {
+      for (let i = 0; i < modifyItems.length; i++) {
+        this.heapContainer[modifyItems[i]] = newItem;
+      }
+
+      this.buildHeap();
+    }
+
+    return this;
+  }
+
+  private buildHeap() {
+    for (let i = this.getParentIndex(this.heapContainer.length - 1); i >= 0; i--) {
+      this.heapifyDown(i);
+    }
   }
 
   find(item: any, comparator = this.compare): number[] {

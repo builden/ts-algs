@@ -168,4 +168,19 @@ describe('MaxHeap', () => {
     maxHeap.remove('hey', comparator);
     expect(maxHeap.toString()).toBe('dddd,a,bb');
   });
+
+  it('should be possible to modify items from heap with build heap', () => {
+    const maxHeap = new MaxHeap();
+
+    maxHeap.add(3);
+    maxHeap.add(10);
+    maxHeap.add(3);
+    maxHeap.add(2);
+    maxHeap.add(4);
+    maxHeap.add(5);
+    expect(maxHeap.toString()).toBe('10,4,5,2,3,3');
+    expect(maxHeap.modify(3, 6).toString()).toBe('10,6,6,2,4,5');
+    expect(maxHeap.modify(10, 1).toString()).toBe('6,6,5,2,4,1');
+    expect(maxHeap.modify(7, 2).toString()).toBe('6,6,5,2,4,1');
+  });
 });
